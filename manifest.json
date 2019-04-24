@@ -8,7 +8,8 @@
   "categories": [],
   "dependencies": {},
   "builders": {
-    "node": "4.x"
+    "node": "4.x",
+    "graphql": "1.x"
   },
   "scripts": {
     "prereleasy": "bash lint.sh"
@@ -19,6 +20,13 @@
       "name": "outbound-access",
       "attrs": {
         "host": "httpstat.us",
+        "path": "*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "viacep.com.br",
         "path": "*"
       }
     },
